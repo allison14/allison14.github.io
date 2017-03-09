@@ -1,0 +1,17 @@
+body{
+  width: 800px;
+  margin: 0 auto;
+ /*margin-left: auto;
+ margin-right: auto;*/
+    background: url("../images/leading-24px.png");
+}
+p{
+    margin-top:0;
+    /* 포토샵에서 지정해준 24px을 상대값 em으로 표기 16 x 1.5=24 */
+    margin-bottom:1.5em;
+    font-size:16px;
+    font-family: "Spoqa Han Sans";
+    line-height:1.5; /*16 x 1.5 = 24 여기서는 버그문제로 단위를 쓰지않는다 */
+    letter-spacing: -0.005em;
+    color:#010101;
+}

@@ -1,0 +1,79 @@
+/*:가상클래스 vs ::가상요소(Pseudo Element)*/
+p::selection{
+    background: #efd4c6;
+    color:#454545;
+}
+/*firefox에서 써줄때 -moz- 추가해서 써주어야함*/
+p::-moz-selection{
+    background: #efd4c6;
+    color:#454545;
+}
+body{
+    margin:0;
+}
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-bottom: 1px solid #c2d6d1;
+}
+.wrapper{
+width: 640px;
+margin-left: auto;
+margin-right: auto;
+}
+.block-box,
+.inline-box{
+     /*width, height 속성은 inline 요소에는 적용되지 않는다.*/
+    width:200px;
+    height:200px;
+/*margin-top, margin-bottom 은 inline요소에는 적용되지 않음(간격이 벌어지지 않음)*/
+    margin: 20px;
+    /*border-top, boder-bottom 은 inline요소에는 적용되지 않음(간격이 벌어지지 않음)*/
+    border:10px solid red;
+    /*padding-top, padding-bottom 은 inline요소에는 적용되지 않음(간격이 벌어지지 않음)*/
+    /*즉, linline에서는 좌,우값은 적용되나 상,하값은 적용안됨.*/
+    padding:20px;
+    background: #3fb5c8;
+    color:#fff;
+}
+.inline-block-box{
+    /*화면표시방법:inline-block으로 변경*/
+    /*기본적으로는 inline처럼 보이지만, block처럼 레이아웃 설정이 가능하다.
+    상,하 공간설정 가능, width/height설정 가능.*/
+    display: inline-block;
+    background: #25a04d;
+    color: #ffd219;
+}
+.ghost-style-link{
+display: inline-block;
+margin: 20px;
+border: 3px solid currentColor;
+/*버튼의 텍스트 간격이 시각적으로 안맞춰져 보이는 경우에는 실제로 확인하면서 패딩값을 조절해야한다(글자수나누기간격픽셀값)*/
+padding: 0.9375em 1.25em 0.625em;
+font-size: 1rem;
+font-weight: 300;
+line-height: 1;
+letter-spacing: -0.03em;
+text-decoration: none;
+text-transform: uppercase;
+color: #3fb5c8;
+transition: all 0.4s ease;
+}
+.ghost-style-link:hover{
+    border-color:#3fb5c8;
+    background: #3fb5c8;
+    color: #fff;
+}
+.album-image{
+    width:100%;
+    height: auto;
+    /*반응형디자인에서 많이사용(width값에 따라 height값이 같은 비율로 조정됨*/
+    margin: 30px 0;
+    border: 8px solid #cccccc;
+    padding: 20px;
+    background: #fff;
+    transition:border-color 340ms ease;/*기본값 liner*/
+}
+.album-image:hover{
+    border-color:#25a04d
+}

@@ -1,0 +1,25 @@
+html{
+    /*y축으로 강제로 scroll바 영역을 보여주는 코드(축이 움직이지않도록하기위함)*/
+    overflow-y: scroll;
+}
+.demo{
+    width: 500px;
+    height: 340px;
+    margin: 3em auto;
+    border: 5px solid #ddd;
+    padding: 1em;
+}
+.o-visible{
+    overflow: visible;
+}
+.o-hidden{
+    overflow: hidden;
+}
+.o-scroll{
+    overflow: scroll;
+    /*overflow-x: scroll;
+    overflow-y: scroll;*/
+}
+.o-auto{
+    overflow: auto;
+}
