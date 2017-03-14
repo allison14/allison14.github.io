@@ -1,0 +1,35 @@
+/*album-style.css*/
+body{
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle, #454545, #222 70%);
+}
+.album{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.album * {position: absolute;}
+.album__disk{
+    right: -50px;
+    }
+
+.album__disk.is-rotate{
+    animation:rotate-disk 1s; infinite;
+}
+@keyframes rotate-disk{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.album__vynil{
+left: 250px;
+top: -4px; }
+.album__cover{
+     box-shadow: 0 4px 3px #000; /*photoshop effect*/
+     border-radius: 3px;
+}
