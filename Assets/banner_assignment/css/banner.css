@@ -1,0 +1,37 @@
+/* banner design css */
+body{
+    margin:0;
+    height: 100vh;
+    padding: 0;
+    background: radial-gradient(#000,#46353f 80%);
+}
+.banner{
+    overflow: hidden;
+    position: absolute;
+    width: 800px;
+    height: 320px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;    
+}
+.banner * {
+    position: absolute;
+       }
+.apes{
+    top: 169px;
+    left: 4px;
+}
+.golliras{
+    top: 109px;
+    left: 12px;
+}
+.kingkong{
+top: 28px;
+left: 491px;
+}
+.sn-logo{
+  top: 18px;
+  left: 18px;
+}
