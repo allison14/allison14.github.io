@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*! page.css © yamoo9.net, 2017 */
+
+html {
+  overflow-y: visible;
+  min-height: 200vh;
+}
+
+/**
+ * --------------------------------
+ * page-header
+ * #26d092
+ * 24px * 3 = 72px
+ * ----------------------------- */
+.page-header {
+  min-height: 72px;
+  background: #26d092;
+}
+
+.page-header .brand {
+  font-family: "Apple Chancery";
+  font-size: 1.875rem;
+  letter-spacing: -0.025em;
+}
+
+.brand a {
+  display: block;
+  margin-top: 21px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* gnb */
+.gnb {
+  margin-top:27px;
+  position:relative;
+  left:18px;
+}
+.gnb li {
+    float: left;
+    margin-right: 43px; /*phosothop에서 하나의 레이어에 일정한 간격으로 작업하도록 한다 */
+}
+.gnb li:last-child {
+    margin-right: 0;
+}
+.gnb a {
+    font-size: 22px;
+    letter-spacing: -0.05em; /*- 50px/1000=-0.05em */
+    text-decoration: none;
+    color: #fff;
+}
+
+
